@@ -1,0 +1,21 @@
+{
+    "recommendations": [
+        "angular.ng-template",
+        "redhat.vscode-xml",
+        "esbenp.prettier-vscode",
+        "hossaini.bootstrap-intellisense",
+        "pucelle.vscode-css-navigation",
+        "pascalreitermann93.vscode-yaml-sort",
+        "davidepostiglione.angular-generate-vscode",
+        "humao.rest-client",
+        "mtxr.sqltools-driver-mysql",
+        "mhutchie.git-graph",
+        "github.vscode-github-actions",
+        "dbaeumer.vscode-eslint",
+        "steoates.autoimport",
+        "crystal-spider.jsdoc-generator",
+        "hookyqr.jsdoctagcomplete",
+        "redhat.fabric8-analytics",
+        "vscode-icons-team.vscode-icons",
+    ]
+}

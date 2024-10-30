@@ -1,4 +1,4 @@
-![](logo.png)
+![](./public/logo.png)
 # FitBasic
 Programme d'entrainement quotidien
 By @atsuhikoMochizuki
