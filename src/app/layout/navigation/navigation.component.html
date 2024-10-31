@@ -1,25 +1,37 @@
-<nav class="navbar navbar-expand-lg bg-body-black">
-  <div class="container-fluid">
-    <a class="navbar-brand d-flex align-items-center justify-content-center" href="#">
-      <img src="assets/images/logo.svg" alt="application logo" width="70vw" height="70vh">
-      <h1 [ngStyle]="this.text_color">{{this.title}}</h1>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-5">
-        <li class="nav-item ">
-          <a class="nav-link active " [ngStyle]="this.text_color" aria-current="page" href="#">Commencer l'entrainement</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [ngStyle]="this.text_color" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [ngStyle]="this.text_color" href="#">Pricing</a>
-        </li>
-        </ul>
-    </div>
-  </div>
-</nav>
- 
+<nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <img src="assets/images/logo.svg" alt="application logo" style="height: 10vh;">
+                    <h1 class="d-none d-lg-block fs-3">TOTO</h1>
+                </div>
+
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                    <li class="nav-item">
+
+                    </li>
+
+                </ul>
+
+
+            </div>
+            <button class="btn btn-success">S'identifier</button>
+        </div>
+    </nav>

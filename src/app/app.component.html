@@ -1,7 +1,13 @@
 <main 
   class="d-flex flex-column"
   [ngStyle]="this.stylePropertiesInjectionObject">
-  <app-header></app-header>
-  <router-outlet></router-outlet>
-  <app-footer class="fixed-bottom"></app-footer>
+  <div class="border border-white">
+    <app-header></app-header>
+  </div>
+  <div class="d-flex flex-column justify-content-center flex-grow-1 flex-shrink-1">
+    <router-outlet></router-outlet>
+  </div>
+  <div style="height: 15vh;" class="border border-dange">
+    <!-- <app-footer class="mt-auto"></app-footer> -->
+  </div>
 </main>

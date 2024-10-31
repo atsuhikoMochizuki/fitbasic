@@ -23,6 +23,6 @@ export class AppComponent {
   stylePropertiesInjectionObject={
   'background-color': env.COLORS_BACKGROUND,
   'color':env.COLORS_TEXT,
-  'height':'85vh'
+  'height':'100vh'
   }
 }
