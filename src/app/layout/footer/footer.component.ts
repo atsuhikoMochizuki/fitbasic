@@ -14,23 +14,20 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [FontAwesomeModule,RouterModule,CommonModule],
+  imports: [FontAwesomeModule, RouterModule, CommonModule],
   templateUrl: './footer.component.html'
 })
 export class FooterComponent {
- title=env.APP_TITLE;
- currentYear:number = new Date().getFullYear();
+  title = env.APP_TITLE;
+  currentYear: number = new Date().getFullYear();
   faTwitter = faTwitter;
   faFacebook = faFacebook;
   faLinkedin = faLinkedin;
-  faInstagram=faInstagram;
+  faInstagram = faInstagram;
 
-  backGroundColor = env.COLORS_FOOTER_BACKGROUND;
-  
   stylePropertiesInjectionObject = {
-    'height':'10vh',  
-    'background-color':env.COLORS_BACKGROUND,
-    'color':env.COLORS_TEXT,
-    'text-decoration':'none',
+    'background-color': env.COLORS_BACKGROUND,
+    'color': env.COLORS_TEXT,
+    'text-decoration': 'none',
   }
 }

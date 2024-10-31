@@ -1,16 +1,26 @@
-<footer [ngStyle]="this.stylePropertiesInjectionObject" class="d-flex flex-column flex-lg-row p-3 align-items-center justify-content-start bg-black border border-danger ">
-    <div>&copy; {{this.currentYear}}, {{this.title}}</div>
-    <div class="d-flex flex-wrap align-items-center justify-content-center ms-5 mt-lg-0 mt-1 gap-3">
-        <a style="text-decoration: none;" [routerLink]="['/legal-mentions']">Mentions légales</a>
-        <a style="text-decoration: none;" [routerLink]="['']">CGU</a>
-        <a style="text-decoration: none;" [routerLink]="['']">Confidentialité</a>
-        <a style="text-decoration: none;" [routerLink]="['']">Cookies</a>
-        <a style="text-decoration: none;" [routerLink]="['']">Contact</a>
-    </div>
-    <div class="d-flex flex-wrap ms-lg-auto me-lg-4 mt-lg-0 mt-2 gap-3 align-items-center justify-content-center justify-content-lg-end bg-black">
-        <div><fa-icon [icon]="faTwitter"></fa-icon></div>
-        <div><fa-icon [icon]="faFacebook"></fa-icon></div>
-        <div><fa-icon [icon]="faLinkedin"></fa-icon></div>
-        <div><fa-icon [icon]="faInstagram"></fa-icon></div>
-    </div>
+<footer class="d-flex align-items-center justify-content-center">
+  <div
+  [ngStyle]="this.stylePropertiesInjectionObject"
+  class="d-flex flex-column align-items-center justify-content-center flex-lg-row align-items-lg-center align-self-lg-center justify-content-lg-around flex-grow-1 flex-shrink-1">
+  <div
+    class="d-flex flex-wrap align-items-center justify-content-center mt-2 mt-lg-0 gap-2 order-lg-2"
+  >
+    <div><a [ngStyle]="this.stylePropertiesInjectionObject" href=""><fa-icon [icon]="faTwitter"></fa-icon></a></div>
+    <div><a [ngStyle]="this.stylePropertiesInjectionObject" href=""><fa-icon [icon]="faFacebook"></fa-icon></a></div>
+    <div><a [ngStyle]="this.stylePropertiesInjectionObject" href=""><fa-icon [icon]="faLinkedin"></fa-icon></a></div>
+    <div><a [ngStyle]="this.stylePropertiesInjectionObject" href=""><fa-icon [icon]="faInstagram"></fa-icon></a></div>
+  </div>
+ <div
+    class="d-flex flex-wrap mt-2 align-items-center justify-content-center gap-2 mt-lg-0 order-lg-1"
+  >
+    <a [ngStyle]="this.stylePropertiesInjectionObject" [routerLink]="['/legal-mentions']"
+      >Mentions légales</a
+    >
+    <a [ngStyle]="this.stylePropertiesInjectionObject" [routerLink]="['']">CGU</a>
+    <a [ngStyle]="this.stylePropertiesInjectionObject" [routerLink]="['']">Confidentialité</a>
+    <a [ngStyle]="this.stylePropertiesInjectionObject" [routerLink]="['']">Cookies</a>
+    <a [ngStyle]="this.stylePropertiesInjectionObject" [routerLink]="['']">Contact</a>
+  </div>
+  <div class="mt-2 mt-lg-0 order-lg-0">&copy; {{ this.currentYear }}, {{ this.title }}</div>
+</div>
 </footer>

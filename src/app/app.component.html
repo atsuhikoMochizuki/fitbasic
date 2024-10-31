@@ -1,13 +1,15 @@
 <main 
   class="d-flex flex-column"
   [ngStyle]="this.stylePropertiesInjectionObject">
-  <div class="border border-white">
+  <div>
     <app-header></app-header>
   </div>
+  <div class="col-8 mx-auto"><hr></div>
   <div class="d-flex flex-column justify-content-center flex-grow-1 flex-shrink-1">
     <router-outlet></router-outlet>
   </div>
-  <div style="height: 15vh;" class="border border-dange">
-    <!-- <app-footer class="mt-auto"></app-footer> -->
+  <div class="col-8 mx-auto"><hr></div>
+  <div style="height: 15vh;" class="d-flex justify-content-center">
+    <app-footer class="align-self-center" style="width:100vw"></app-footer>
   </div>
 </main>
