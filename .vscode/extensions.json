@@ -11,11 +11,11 @@
         "mtxr.sqltools-driver-mysql",
         "mhutchie.git-graph",
         "github.vscode-github-actions",
-        "dbaeumer.vscode-eslint",
         "steoates.autoimport",
         "crystal-spider.jsdoc-generator",
         "hookyqr.jsdoctagcomplete",
         "redhat.fabric8-analytics",
         "vscode-icons-team.vscode-icons",
+        "rvest.vs-code-prettier-eslint",
     ]
 }

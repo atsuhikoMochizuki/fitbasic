@@ -20,15 +20,17 @@
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
-             "assets": ["src/favicon.ico", "src/assets/images"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets/images"
+            ],
             "styles": [
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
               "node_modules/@popperjs/core/dist/umd/popper.min.js",
- "node_modules/bootstrap/dist/js/bootstrap.min.js"
-
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
           "configurations": {
@@ -95,8 +97,22 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
+  },
+  "cli": {
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }

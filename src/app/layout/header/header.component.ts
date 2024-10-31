@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { environment } from '../../../environments/environment.development';
+import { environment as env } from '../../../environments/environment.development';
 import { NavigationComponent } from "../navigation/navigation.component";
 import { CommonModule } from '@angular/common';
 
@@ -14,8 +14,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-header',
   standalone: true,
   imports: [CommonModule,NavigationComponent],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  templateUrl: './header.component.html'
 })
 export class HeaderComponent {
 
@@ -24,9 +23,9 @@ export class HeaderComponent {
  *
  * @type {${2:*}}
  */
-appTitle=environment.visu.APP_TITLE;
-properties={
-  'backgroundColor':environment.visu.COLORS_BACKGROUND,
+appTitle=env.APP_TITLE;
+stylePropertiesInjectionObject={
+  'backgroundColor':env.COLORS_BACKGROUND,
   'height':'15vh'
 }
 }

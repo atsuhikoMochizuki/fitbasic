@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { environment } from '../../../environments/environment.development';
+import { Component} from '@angular/core';
+import { environment as env } from '../../../environments/environment.development';
 
 /**
  * ${1:Description placeholder}
@@ -12,26 +12,10 @@ import { environment } from '../../../environments/environment.development';
   selector: 'app-home',
   standalone: true,
   imports: [],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  templateUrl: './home.component.html'
 })
 export class HomeComponent{
-  /**
- * ${1:Description placeholder}
- *
- * @type {string}
- */
-slogan:string=environment.visu.APP_SLOGAN;
-/**
- * ${1:Description placeholder}
- *
- * @type {string}
- */
-subtitle:string=environment.visu.APP_SUBTITLE;
-/**
- * ${1:Description placeholder}
- *
- * @type {string}
- */
-description:string= environment.visu.APP_DESCRIPTION;
+  slogan:string=env.APP_SLOGAN;
+  subtitle:string=env.APP_SUBTITLE;
+  description:string= env.APP_DESCRIPTION;
 }
