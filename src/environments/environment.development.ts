@@ -4,6 +4,6 @@ export const environment={
     APP_SLOGAN: "Restez au sommet",
     APP_DESCRIPTION: "Cette petite application permet de maintenir la forme au niveau de la pratique personnelle de codage",
     COLORS_BACKGROUND: 'black',
-    COLORS_FOOTER_BACKGROUND:'#272525',
+    COLORS_FOOTER_BACKGROUND:'black',
     COLORS_TEXT: 'white',
 } 

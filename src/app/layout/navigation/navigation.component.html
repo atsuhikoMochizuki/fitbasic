@@ -1,7 +1,7 @@
 <nav
   class="navbar navbar-expand-lg"
   data-bs-theme="dark"
->
+ >
   <div class="container-fluid d-flex align-items-center">
     <a
       class="navbar-brand d-flex align-items-center justify-content-center"
@@ -13,7 +13,7 @@
         width="70vw"
         height="70vh"
       />
-      <h1 [ngStyle]="this.text_color">{{ this.title }}</h1>
+      <h1 [ngStyle]="this.stylePropertiesInjectionObject">{{ this.title }}</h1>
     </a>
     <button
       class="navbar-toggler"
@@ -26,22 +26,25 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <div class="navbar-nav d-flex">
-        <div class="nav-item ">
+    <div 
+      class="collapse navbar-collapse " 
+      id="navbarNav"
+      [ngStyle]="this.stylePropertiesInjectionObject">
+      <div class="navbar-nav d-flex p-3 rounded" >
+        <div class="nav-item">
           <a
             class="nav-link active"
-            [ngStyle]="this.text_color"
+            [ngStyle]="this.stylePropertiesInjectionObject"
             aria-current="page"
             href="#"
             >Commencer l'entrainement</a
           >
         </div>
         <li class="nav-item">
-          <a class="nav-link" [ngStyle]="this.text_color" href="#">Features</a>
+          <a class="nav-link" [ngStyle]="this.stylePropertiesInjectionObject" href="#">Features</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [ngStyle]="this.text_color" href="#">Pricing</a>
+          <a class="nav-link" [ngStyle]="this.stylePropertiesInjectionObject" href="#">Pricing</a>
         </li>
         <li class="nav-item d-lg-none mb-2 mb-lg-0">
           <a
@@ -52,6 +55,8 @@
         </li>
       </div>
     </div>
-    <button class="d-none d-lg-block btn btn-success ms-auto mb-3">S'identifier</button>
+    <button class="d-none d-lg-block  btn btn-success ms-auto">S'identifier</button>
   </div>
+  <div class="bg-secondary w-50 mx-auto d-lg-none" style="height: 1px;"></div>
+  
 </nav>

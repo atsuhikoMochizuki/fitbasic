@@ -1,14 +1,21 @@
+<!-- Agencement du viewport -->
 <main 
   class="d-flex flex-column"
   [ngStyle]="this.stylePropertiesInjectionObject">
+  <!-- Div dédiée au header, fixe et taille hauteur déterminée -->
   <div>
-    <app-header></app-header>
+    <app-header class="fixed-top" style="height:13vh"></app-header>
   </div>
-  <div class="col-8 mx-auto"><hr></div>
-  <div class="d-flex flex-column justify-content-center flex-grow-1 flex-shrink-1">
+
+  <!-- Contenu routé -->
+  <div 
+    class="d-flex flex-column flex-grow-1 flex-shrink-1"
+    style="margin-top: 13vh;"
+    >
     <router-outlet></router-outlet>
   </div>
-  <div class="col-8 mx-auto"><hr></div>
+
+  <!-- Div dédiée au footer -->
   <div style="height: 15vh;" class="d-flex justify-content-center">
     <app-footer class="align-self-center" style="width:100vw"></app-footer>
   </div>

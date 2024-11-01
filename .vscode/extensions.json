@@ -1,7 +1,7 @@
 {
     "recommendations": [
         "angular.ng-template",
-        "redhat.vscode-xml",
+        // "redhat.vscode-xml",
         "esbenp.prettier-vscode",
         "hossaini.bootstrap-intellisense",
         "pucelle.vscode-css-navigation",

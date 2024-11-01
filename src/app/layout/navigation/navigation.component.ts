@@ -9,6 +9,12 @@ import { environment as env} from '../../../environments/environment.development
   templateUrl: './navigation.component.html'
 })
 export class NavigationComponent {
-  text_color={'color':env.COLORS_TEXT};
+  stylePropertiesInjectionObject=
+    {
+      'color':env.COLORS_TEXT,
+      'background-color':env.COLORS_BACKGROUND,
+      
+      
+    };
   title=env.APP_TITLE;
 }
