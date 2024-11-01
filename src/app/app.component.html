@@ -3,22 +3,19 @@
   class="d-flex flex-column"
   [ngStyle]="this.stylePropertiesInjectionObject">
   <!-- Div dédiée au header, fixe et taille hauteur déterminée -->
-  <div>
-    <app-header class="fixed-top" style="height:13vh"></app-header>
+  <div class="">
+    <app-header class="fixed-top" style="height:16vh"></app-header>
   </div>
  
-  
-
   <!-- Contenu routé -->
   <div 
     class="d-flex flex-column flex-grow-1 flex-shrink-1"
-    style="margin-top: 13vh;"
-    >
-    <!-- <router-outlet></router-outlet> -->
+    style="margin-top: 17vh;">
+    <router-outlet></router-outlet>
   </div>
 
   <!-- Div dédiée au footer -->
   <div class="d-flex align-items-center justify-content-center">
-    <app-footer class="align-self-center" style="width:100vw"></app-footer>
+    <app-footer class="align-self-center" style="width:100vw;height:15vh"></app-footer>
   </div>
 </main>

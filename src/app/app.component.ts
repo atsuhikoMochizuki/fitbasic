@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./layout/header/header.component";
 import { FooterComponent } from "./layout/footer/footer.component";
-import { CommonModule} from '@angular/common';
-import { environment as env} from '../environments/environment.development';
+import { CommonModule } from '@angular/common';
+import { environment as env } from '../environments/environment.development';
 
 /**
  * ${1:Description placeholder}
@@ -17,12 +17,17 @@ import { environment as env} from '../environments/environment.development';
   standalone: true,
   imports: [RouterOutlet, HeaderComponent, FooterComponent, CommonModule],
   templateUrl: './app.component.html'
-  })
+})
 export class AppComponent {
+  
+  stylePropertiesInjectionObject = {
+    'background-color': env.COLORS_BACKGROUND,
+    'color': env.COLORS_TEXT,
+    'height': '100vh'
+  }
 
-  stylePropertiesInjectionObject={
-  'background-color': env.COLORS_BACKGROUND,
-  'color':env.COLORS_TEXT,
-  'height':'100vh'
+  mainPropertiesInjectionObject = {
+    'background-color': env.COLORS_BACKGROUND,
+    'color': env.COLORS_TEXT
   }
 }

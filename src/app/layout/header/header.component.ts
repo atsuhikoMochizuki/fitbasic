@@ -24,8 +24,8 @@ export class HeaderComponent {
  * @type {${2:*}}
  */
 appTitle=env.APP_TITLE;
+
 stylePropertiesInjectionObject={
-  'backgroundColor':env.COLORS_BACKGROUND,
-  'height':'15vh'
+  'backgroundColor':env.COLORS_BACKGROUND
 }
 }
