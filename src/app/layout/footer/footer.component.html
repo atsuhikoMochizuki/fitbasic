@@ -1,27 +1,65 @@
-<footer class="d-flex align-items-center justify-content-center">
+<footer
+  class="d-flex align-items-center justify-content-center mb-lg-0 mb-2 mt-0"
+>
   <div
-  [ngStyle]="this.stylePropertiesInjectionObject"
-  class="d-flex flex-column align-items-center justify-content-center flex-lg-row align-items-lg-center align-self-lg-center justify-content-lg-around flex-grow-1 flex-shrink-1">
-  <div class="col-8 mx-auto"><hr></div>
-  <div
-    class="d-flex flex-wrap align-items-center justify-content-center mt-2 mt-lg-0 gap-2 order-lg-2"
+    class="d-flex flex-column justify-content-center align-items-center my-lg-3 w-100"
   >
-    <div><a [ngStyle]="this.stylePropertiesInjectionObject" href=""><fa-icon [icon]="faTwitter"></fa-icon></a></div>
-    <div><a [ngStyle]="this.stylePropertiesInjectionObject" href=""><fa-icon [icon]="faFacebook"></fa-icon></a></div>
-    <div><a [ngStyle]="this.stylePropertiesInjectionObject" href=""><fa-icon [icon]="faLinkedin"></fa-icon></a></div>
-    <div><a [ngStyle]="this.stylePropertiesInjectionObject" href=""><fa-icon [icon]="faInstagram"></fa-icon></a></div>
-  </div>
- <div
-    class="d-flex flex-wrap mt-2 align-items-center justify-content-center gap-2 mt-lg-0 order-lg-1"
-  >
-    <a [ngStyle]="this.stylePropertiesInjectionObject" [routerLink]="['/legal-mentions']"
-      >Mentions légales</a
+    <div
+      class="bg-secondary w-50 mx-auto d-block mb-lg-3"
+      style="height: 1px"
+    ></div>
+    <div
+      [ngStyle]="this.stylePropertiesInjectionObject"
+      class="d-flex flex-column align-items-center flex-lg-row align-items-lg-center justify-content-lg-around flex-grow-1 flex-shrink-1 w-100"
     >
-    <a [ngStyle]="this.stylePropertiesInjectionObject" [routerLink]="['']">CGU</a>
-    <a [ngStyle]="this.stylePropertiesInjectionObject" [routerLink]="['']">Confidentialité</a>
-    <a [ngStyle]="this.stylePropertiesInjectionObject" [routerLink]="['']">Cookies</a>
-    <a [ngStyle]="this.stylePropertiesInjectionObject" [routerLink]="['']">Contact</a>
+      <div
+        class="d-flex flex-wrap align-items-center justify-content-center mt-2 mt-lg-0 gap-4 order-lg-2"
+      >
+        <div>
+          <a [ngStyle]="this.stylePropertiesInjectionObject" href=""
+            ><fa-icon [icon]="faTwitter"></fa-icon
+          ></a>
+        </div>
+        <div>
+          <a [ngStyle]="this.stylePropertiesInjectionObject" href=""
+            ><fa-icon [icon]="faFacebook"></fa-icon
+          ></a>
+        </div>
+        <div>
+          <a [ngStyle]="this.stylePropertiesInjectionObject" href=""
+            ><fa-icon [icon]="faLinkedin"></fa-icon
+          ></a>
+        </div>
+        <div>
+          <a [ngStyle]="this.stylePropertiesInjectionObject" href=""
+            ><fa-icon [icon]="faInstagram"></fa-icon
+          ></a>
+        </div>
+      </div>
+      <div
+        class="d-flex flex-wrap mt-2 align-items-center justify-content-center gap-2 mt-lg-0 order-lg-1"
+      >
+        <a
+          [ngStyle]="this.stylePropertiesInjectionObject"
+          [routerLink]="['/legal-mentions']"
+          >Mentions légales</a
+        >
+        <a [ngStyle]="this.stylePropertiesInjectionObject" [routerLink]="['']"
+          >CGU</a
+        >
+        <a [ngStyle]="this.stylePropertiesInjectionObject" [routerLink]="['']"
+          >Confidentialité</a
+        >
+        <a [ngStyle]="this.stylePropertiesInjectionObject" [routerLink]="['']"
+          >Cookies</a
+        >
+        <a [ngStyle]="this.stylePropertiesInjectionObject" [routerLink]="['']"
+          >Contact</a
+        >
+      </div>
+      <div class="mt-2 mt-lg-0 order-lg-0">
+        &copy; {{ this.currentYear }}, {{ this.title }}
+      </div>
+    </div>
   </div>
-  <div class="mt-2 mt-lg-0 order-lg-0">&copy; {{ this.currentYear }}, {{ this.title }}</div>
-</div>
 </footer>
