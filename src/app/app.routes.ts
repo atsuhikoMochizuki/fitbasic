@@ -27,6 +27,16 @@ export const routes: Routes = [
         pathMatch:'full'
     },
     {
+        path:'privacy-cookies',
+        loadComponent:()=>import('./functionnalities/cookies-policy/cookies-policy.component').then(module=>module.CookiesPolicyComponent),
+        pathMatch:'full'
+    },
+    {
+        path:'contact',
+        loadComponent:()=>import('./functionnalities/contact/contact.component').then(module=>module.ContactComponent),
+        pathMatch:'full'
+    },
+    {
         path:'page-not-found',
         loadComponent:()=> import('./functionnalities/page-not-found/page-not-found.component').then(module=>module.PageNotFoundComponent),
         pathMatch:'full'

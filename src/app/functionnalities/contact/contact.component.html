@@ -1,0 +1,13 @@
+<div class="d-flex flex-column align-items-start justify-content-center p-3"
+    [ngStyle]="this.stylePropertiesInjectionObject">
+    <h1 style="text-align: center">Contact</h1>
+
+    <div class="category d-flex flex-column align-items-start">
+        <h2 class="mt-4"></h2>
+        <p class="value">
+           {{this.informationInjectObject.companyNameOrSiteResponsible}}
+           <br>{{this.informationInjectObject.addressOfTheRegistereOfficeOrDomicileOfSiteResponsible}}
+           <br>{{this.informationInjectObject.companyEmail}} - {{this.informationInjectObject.companyPhoneNumber}}
+        </p>
+    </div>
+</div>
