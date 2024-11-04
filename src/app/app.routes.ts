@@ -17,6 +17,11 @@ export const routes: Routes = [
         pathMatch:'full'
     },
     {
+        path: "cgu",
+        loadComponent:()=> import('./functionnalities/cgu/cgu.component').then(module=>module.CguComponent),
+        pathMatch:'full'
+    },
+    {
         path:'page-not-found',
         loadComponent:()=> import('./functionnalities/page-not-found/page-not-found.component').then(module=>module.PageNotFoundComponent),
         pathMatch:'full'
