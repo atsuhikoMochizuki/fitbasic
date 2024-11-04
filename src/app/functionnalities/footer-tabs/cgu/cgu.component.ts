@@ -1,21 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { environment as env } from '../../../environments/environment.development';
+import { Component } from '@angular/core';
+import { environment as env } from '../../../../environments/environment.development';
 import { CommonModule } from '@angular/common';
-import { ToastrService } from 'ngx-toastr';
-
-
 
 @Component({
-  selector: 'app-contact',
+  selector: 'app-cgu',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './contact.component.html',
-  styleUrl: '../../../styles.css',
- 
+  templateUrl: './cgu.component.html',
+  styleUrl: '../../../../styles.css'
 })
-export class ContactComponent{
-
-  constructor(){}
+export class CguComponent {
   stylePropertiesInjectionObject = {
     'background-color': env.COLORS_BACKGROUND,
     'color': env.COLORS_TEXT

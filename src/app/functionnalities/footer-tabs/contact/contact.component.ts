@@ -1,15 +1,21 @@
-import { Component } from '@angular/core';
-import { environment as env } from '../../../environments/environment.development';
+import { Component, OnInit } from '@angular/core';
+import { environment as env } from '../../../../environments/environment.development';
 import { CommonModule } from '@angular/common';
+import { ToastrService } from 'ngx-toastr';
+
+
 
 @Component({
-  selector: 'app-legal-mentions',
+  selector: 'app-contact',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './legal-mentions.component.html',
-  styleUrl:"../../../styles.css"
-  })
-export class LegalMentionsComponent {
+  templateUrl: './contact.component.html',
+  styleUrl: '../../../../styles.css',
+ 
+})
+export class ContactComponent{
+
+  constructor(){}
   stylePropertiesInjectionObject = {
     'background-color': env.COLORS_BACKGROUND,
     'color': env.COLORS_TEXT

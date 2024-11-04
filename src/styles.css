@@ -1,3 +1,4 @@
+/* Taille du container dédié aux fonctionnalités */
 .func{
     height: 70vh;
 }
@@ -13,4 +14,13 @@
 
 .category {
     margin-left: 2vh;
+}
+
+.ng-valid [required]{
+    border-left: 5px solid green;
+}
+
+/* All element who aren't form not valid (input, select...) */
+.ng-invalid:not(form){
+    border-left: 5px solid red;
 }

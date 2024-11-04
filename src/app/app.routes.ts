@@ -11,36 +11,48 @@ export const routes: Routes = [
         loadComponent: () => import('./functionnalities/home/home.component').then(module => module.HomeComponent),
         pathMatch: 'full'
     },
+
+    // Authentication
+    {
+        path:'register',
+        loadComponent:()=>import('./functionnalities/auth/register/register.component').then(module=>module.RegisterComponent),
+        pathMatch:'full'
+    },
+
+    // Footer tabs
     {
         path: 'legal-mentions',
-        loadComponent:()=> import('./functionnalities/legal-mentions/legal-mentions.component').then(module=>module.LegalMentionsComponent),
+        loadComponent:()=> import('./functionnalities/footer-tabs/legal-mentions/legal-mentions.component').then(module=>module.LegalMentionsComponent),
         pathMatch:'full'
     },
     {
         path: "cgu",
-        loadComponent:()=> import('./functionnalities/cgu/cgu.component').then(module=>module.CguComponent),
+        loadComponent:()=> import('./functionnalities/footer-tabs/cgu/cgu.component').then(module=>module.CguComponent),
         pathMatch:'full'
     },
     {
         path:"privacy-policy",
-        loadComponent: ()=> import('./functionnalities/privacy-policy/privacy-policy.component').then(module=>module.PrivacyPolicyComponent),
+        loadComponent: ()=> import('./functionnalities/footer-tabs/privacy-policy/privacy-policy.component').then(module=>module.PrivacyPolicyComponent),
         pathMatch:'full'
     },
     {
         path:'privacy-cookies',
-        loadComponent:()=>import('./functionnalities/cookies-policy/cookies-policy.component').then(module=>module.CookiesPolicyComponent),
+        loadComponent:()=>import('./functionnalities/footer-tabs/cookies-policy/cookies-policy.component').then(module=>module.CookiesPolicyComponent),
         pathMatch:'full'
     },
     {
         path:'contact',
-        loadComponent:()=>import('./functionnalities/contact/contact.component').then(module=>module.ContactComponent),
+        loadComponent:()=>import('./functionnalities/footer-tabs/contact/contact.component').then(module=>module.ContactComponent),
         pathMatch:'full'
     },
+
     {
         path:'page-not-found',
         loadComponent:()=> import('./functionnalities/page-not-found/page-not-found.component').then(module=>module.PageNotFoundComponent),
         pathMatch:'full'
     },
+
+    // Redirections
     {
         path: '',
         redirectTo: 'home',

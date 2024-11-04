@@ -5,8 +5,6 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class DatasManagerService {
-
-  // private _toto:string = new BehaviorSubject<boolean>("toto");
-
-  constructor() {}
+  isAccountActivationSucceed = new BehaviorSubject<boolean>(false);
+  
 }

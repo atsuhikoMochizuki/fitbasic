@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
-import { environment as env } from '../../../environments/environment.development';
+import { environment as env } from '../../../../environments/environment.development';
 import { CommonModule } from '@angular/common';
+
 @Component({
-  selector: 'app-privacy-policy',
+  selector: 'app-legal-mentions',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './privacy-policy.component.html',
-  styleUrl: '../../../styles.css'
-})
-export class PrivacyPolicyComponent {
+  templateUrl: './legal-mentions.component.html',
+  styleUrl:"../../../../styles.css"
+  })
+export class LegalMentionsComponent {
   stylePropertiesInjectionObject = {
     'background-color': env.COLORS_BACKGROUND,
     'color': env.COLORS_TEXT

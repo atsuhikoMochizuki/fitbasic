@@ -1,0 +1,66 @@
+<div class="d-flex flex-column align-items-center justify-content-start func">
+    <h1 class="mt-5">Création d'un compte</h1>
+    <div class="d-flex flex-column align-items-center justify-content-center flex-grow-1 flex-shrink-1">
+        @if (this.isAccountActivationSucceeded) {
+            <p>Le compte est crée</p>
+            }@else {
+            <form
+              class="d-flex flex-column align-items-center justify-content-center"
+              (ngSubmit)="this.onSubmitregister()"
+              #registerForm="ngForm"
+            >
+             
+              <!--  PSEUDO FIELD -->
+              <div class="input-group input-group-sm mb-4">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Pseudo</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="pseudo"
+                  aria-describedby="inputGroup-sizing-sm"
+                  required
+                  pattern="^[a-zA-Z0-9!@#$%^&*()_+=-{}[\]:;<>?,./~|]{0,25}$"
+                  [(ngModel)]="this.pseudonyme"
+                  name="pseudo"
+                  #pseudo="ngModel"
+                />
+              </div>
+            
+              <!-- EMAIL FIELD -->
+              <div class="input-group input-group-sm mb-4 ">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Email</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="inputGroup-sizing-sm"
+                  required
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  [(ngModel)]="this.username"
+                  name="email"
+                  #emailA="ngModel"
+                />
+              </div>
+            
+              <!-- PASSWORD FIELD 
+               Entre 8 et 12 caractère, une lettre majuscule, une lettre minuscule, un chiffre et un caractère spécial-->
+              <div class="input-group input-group-sm mb-4">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Mot de passe</span>
+               <input type="password" class="form-control" id="pwd" aria-describedby="inputGroup-sizing-sm" required
+                  pattern="[a-zA-Z0-9!@#$%^&*_=+-]{8,12}" [(ngModel)]="this.password" name="password" #pwdA="ngModel" />
+                </div>
+                <p class="d-flex flex-wrap col-4">Le mot de passe sera composé de 8 à 12 caractères et comportera une lettre majuscule, une lettre minuscule, un chiffre et un caractère spécial</p>
+            
+              <div class="d-flex flex-grow-0 justify-content-center">
+                <button type="submit" class="mt-5 btn btn-secondary ms-lg-auto border border-white"
+                  [disabled]="!registerForm.form.valid">
+                  Continuer
+                </button>
+              </div>
+            </form>
+            
+            }
+    </div>
+    
+        
+</div>

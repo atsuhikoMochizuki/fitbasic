@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { environment as env } from '../../../environments/environment.development';
+import { environment as env } from '../../../../environments/environment.development';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './cookies-policy.component.html',
-  styleUrl: '../../../styles.css'
+  styleUrl: '../../../../styles.css'
 })
 export class CookiesPolicyComponent {
   stylePropertiesInjectionObject = {

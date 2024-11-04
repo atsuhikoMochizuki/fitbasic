@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
-import { environment as env } from '../../../environments/environment.development';
+import { environment as env } from '../../../../environments/environment.development';
 import { CommonModule } from '@angular/common';
-
 @Component({
-  selector: 'app-cgu',
+  selector: 'app-privacy-policy',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './cgu.component.html',
-  styleUrl: '../../../styles.css'
+  templateUrl: './privacy-policy.component.html',
+  styleUrl: '../../../../styles.css'
 })
-export class CguComponent {
+export class PrivacyPolicyComponent {
   stylePropertiesInjectionObject = {
     'background-color': env.COLORS_BACKGROUND,
     'color': env.COLORS_TEXT
