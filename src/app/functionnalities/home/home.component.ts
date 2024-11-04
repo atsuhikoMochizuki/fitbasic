@@ -1,4 +1,5 @@
-import { Component} from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
+import { Component, OnInit} from '@angular/core';
 import { environment as env } from '../../../environments/environment.development';
 import { CommonModule } from '@angular/common';
 
@@ -18,7 +19,14 @@ import { CommonModule } from '@angular/common';
     '../../../styles.css'
   ]
 })
-export class HomeComponent{
+export class HomeComponent implements OnInit{
+  
+  constructor(private toastr: ToastrService){}
+
+  ngOnInit(): void {
+    this.toastr.success("Soyez le bienvenu","Bienvenue");
+  }
+  
   slogan:string=env.APP_SLOGAN;
   subtitle:string=env.APP_SUBTITLE;
   description:string= env.APP_DESCRIPTION;
