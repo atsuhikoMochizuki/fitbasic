@@ -1,0 +1,83 @@
+<div class="d-flex flex-column align-items-start justify-content-center p-3"
+    [ngStyle]="this.stylePropertiesInjectionObject">
+    <h1 style="text-align: center">Politique de confidentialité</h1>
+
+    <div class="category d-flex flex-column align-items-start">
+        <h2 class="mt-4">Identité et coordonnées du responsable du traitement</h2>
+        <p class="value">
+            Nous sommes
+            {{ this.informationInjectObject.companyNameOrSiteResponsible }}, située à
+            {{
+            this.informationInjectObject
+            .addressOfTheRegistereOfficeOrDomicileOfSiteResponsible
+            }}, et nous sommes le responsable du traitement des données personnelles
+            collectées sur notre site web.
+        </p>
+    </div>
+
+    <div class="category d-flex flex-column align-items-start">
+        <h2 class="mt-4">Finalités du traitement</h2>
+        <p class="value">
+            Nous collectons et traitons les données personnelles pour les besoins
+            suivants :
+            <br />- Gestion des relations avec les clients et les prospects
+            <br />- Envoi de newsletters et de communications commerciales
+            <br />- Amélioration de la navigation et de l’expérience utilisateur sur notre
+            site web
+            <br />- Analyse de l’activité du site web pour améliorer sa performance et sa sécurité>
+        </p>
+    </div>
+
+    <div class="category d-flex flex-column align-items-start">
+        <h2 class="mt-4">Catégories de données collectées</h2>
+        <p class="value">Nous collectons les données suivantes :
+            <br>- Informations d’identification (nom, prénom, adresse e-mail)
+            <br>- Informations de contact (adresse postale, téléphone)
+            <br>- Informations de navigation (adresse IP, données de connexion)
+            <br>- Informations de paiement (si vous effectuez une transaction sur notre site web)
+        </p>
+    </div>
+
+    <div class="category d-flex flex-column align-items-start">
+        <h2 class="mt-4">Mise en garde</h2>
+        <p class="value">Nous vous informons que les données collectées sont stockées sur des serveurs sécurisés et que nous prenons
+            toutes les mesures nécessaires pour les protéger contre les accès non autorisés.</p>
+    </div>
+
+    <div class="category d-flex flex-column align-items-start">
+        <h2 class="mt-4">Droits des utilisateurs</h2>
+        <p class="value">Vous avez le droit de :
+            <br>- Accéder aux données vous concernant
+            <br>- Rectifier les erreurs ou les inexactitudes
+            <br>- Demander la suppression de vos données
+            <br>- Obtenir une copie des données vous concernant
+        </p>
+    </div>
+
+    <div class="category d-flex flex-column align-items-start">
+        <h2 class="mt-4">Cookies</h2>
+        <p class="value">Nous utilisons des cookies pour améliorer l’expérience utilisateur et analyser l’activité du site web. Vous
+            pouvez refuser l’utilisation des cookies en configurant votre navigateur.</p>
+    </div>
+
+    <div class="category d-flex flex-column align-items-start">
+        <h2 class="mt-4">Liens externes</h2>
+        <p class="value">Nous ne sommes pas responsables des politiques de confidentialité des sites web tiers que nous pouvons lier à
+            partir de notre site web.</p>
+    </div>
+
+    <div class="category d-flex flex-column align-items-start">
+        <h2 class="mt-4">Mise à jour</h2>
+        <p class="value">Nous nous réservons le droit de modifier cette déclaration de confidentialité à tout moment. Nous vous
+            recommandons de la consulter régulièrement pour vous assurer que vous êtes informé des pratiques de
+            confidentialité en vigueur.</p>
+    </div>
+
+    <div class="category d-flex flex-column align-items-start">
+        <h2 class="mt-4">Contact</h2>
+        <p class="value">Si vous avez des questions ou des préoccupations concernant notre politique de confidentialité, n’hésitez pas
+            à nous contacter à l’adresse
+            {{this.informationInjectObject.addressOfTheRegistereOfficeOrDomicileOfSiteResponsible}} ou au numéro de
+            téléphone {{this.informationInjectObject.companyPhoneNumber}}.</p>
+    </div>
+</div>

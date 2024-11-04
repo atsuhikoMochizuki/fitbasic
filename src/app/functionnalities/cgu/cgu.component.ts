@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './cgu.component.html',
-  styleUrl: './cgu.component.css'
+  styleUrl: '../../../styles.css'
 })
 export class CguComponent {
   stylePropertiesInjectionObject = {

@@ -22,6 +22,11 @@ export const routes: Routes = [
         pathMatch:'full'
     },
     {
+        path:"privacy-policy",
+        loadComponent: ()=> import('./functionnalities/privacy-policy/privacy-policy.component').then(module=>module.PrivacyPolicyComponent),
+        pathMatch:'full'
+    },
+    {
         path:'page-not-found',
         loadComponent:()=> import('./functionnalities/page-not-found/page-not-found.component').then(module=>module.PageNotFoundComponent),
         pathMatch:'full'

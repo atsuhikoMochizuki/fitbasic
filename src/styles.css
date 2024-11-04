@@ -1,3 +1,16 @@
 .func{
     height: 70vh;
 }
+
+.key {
+    margin-top: 1vh;
+    font-weight: bolder;
+}
+
+.value {
+    font-style: italic;
+}
+
+.category {
+    margin-left: 2vh;
+}
