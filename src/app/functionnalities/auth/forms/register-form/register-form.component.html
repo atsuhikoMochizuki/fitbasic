@@ -1,6 +1,6 @@
-<div class="d-flex flex-column align-items-center justify-content-start func">
-    <h1 class="mt-5">Création d'un compte</h1>
-    <div class="d-flex flex-column align-items-center justify-content-center flex-grow-1 flex-shrink-1">
+<div class="d-flex flex-column align-items-center justify-content-center func">
+    <h1 class="mt-4 mb-5">Création d'un compte</h1>
+    <div class="d-flex flex-column align-items-center justify-content-center">
         @if (this.isAccountActivationSucceeded) {
             <p>Le compte est crée</p>
             }@else {
@@ -9,8 +9,8 @@
               (ngSubmit)="this.onSubmitregister()"
               #registerForm="ngForm"
             >
-             
-              <!--  PSEUDO FIELD -->
+          
+            <!-- PSEUDO FIELD -->
               <div class="input-group input-group-sm mb-4">
                 <span class="input-group-text" id="inputGroup-sizing-sm">Pseudo</span>
                 <input
@@ -49,7 +49,7 @@
                <input type="password" class="form-control" id="pwd" aria-describedby="inputGroup-sizing-sm" required
                   pattern="[a-zA-Z0-9!@#$%^&*_=+-]{8,12}" [(ngModel)]="this.password" name="password" #pwdA="ngModel" />
                 </div>
-                <p class="d-flex flex-wrap col-4">Le mot de passe sera composé de 8 à 12 caractères et comportera une lettre majuscule, une lettre minuscule, un chiffre et un caractère spécial</p>
+                <!-- <p class="d-flex flex-wrap col-4">Le mot de passe sera composé de 8 à 12 caractères et comportera une lettre majuscule, une lettre minuscule, un chiffre et un caractère spécial</p> -->
             
               <div class="d-flex flex-grow-0 justify-content-center">
                 <button type="submit" class="mt-5 btn btn-secondary ms-lg-auto border border-white"
