@@ -1,0 +1,35 @@
+{
+	"recommendations": [
+			// Redhat
+			"redhat.java",
+			"redhat.vscode-xml",
+			// VSCode Java
+			"vscjava.vscode-java-debug",
+			"vscjava.vscode-java-pack",
+			"vscjava.vscode-maven",
+			"vscjava.vscode-java-dependency",
+			// Spring Boot
+			"vscjava.vscode-spring-boot-dashboard",
+			"vmware.vscode-spring-boot",
+			"vscjava.vscode-spring-initializr",
+			"pivotal.vscode-boot-dev-pack",
+			// SQL
+			"mtxr.sqltools",
+			"mtxr.sqltools-driver-mysql",
+			// REST API
+			"humao.rest-client",
+			// Git
+			"mhutchie.git-graph",
+			// Test coverage
+			"ryanluker.vscode-coverage-gutters",
+			// Javadoc Generation
+			"madhavd1.javadoc-tools",
+			// Code Generation(Getters,Setters...)
+			"jaland.java-generate-setters-getters-update-equals",
+			// Editor
+			"tgosystems.togglebracketguides",
+			"vscode-icons-team.vscode-icons",
+			"alefragnani.bookmarks",
+			"vscjava.vscode-java-test",
+		]
+}

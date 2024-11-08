@@ -1,0 +1,30 @@
+package fr.inote.inoteApi.crossCutting.security;
+
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Builder
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Entity
+@Table(name = "ent")
+public class Ent {
+
+    /* Id & strategy generation <=> primary key */
+    /* ============================================================ */
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    /* Private attributes <=> columns*/
+    /* ============================================================ */
+   
+
+    /* Private attributes in relations with others entities <=> foreign key*/
+    /* ============================================================ */
+}
