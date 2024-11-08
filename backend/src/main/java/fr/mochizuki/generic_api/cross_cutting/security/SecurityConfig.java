@@ -186,7 +186,7 @@ public class SecurityConfig {
                         // .requestMatchers(GET, "/comment").hasAnyAuthority("ROLE_ADMIN",
                         // "ROLE_MANAGER")
 
-                        // -> By default must be authenticated
+                        // ->  By default must be authenticated
                         .anyRequest().authenticated())
                                 
 
